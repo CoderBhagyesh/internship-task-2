@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#home .container {
+  position: relative;
+}
+.banner-one{
+  padding: 20px 130px 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('images/gibs-campus1.jpeg');
+  background-size: cover;
+  background-position: top;
+}
+
+.banner-one-col-1{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin-left: 8rem;
+}
+
+.banner-one-col-1>p:nth-of-type(1){
+  color: rgb(241, 198, 22);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.banner-one-col-1>p:nth-of-type(2){
+  color: #fff;
+  font-size: 31px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 0.05px;
+}
+
+.banner-one-col-2{
+  width: 374px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.award-container {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.award-item {
+  flex: 1;
+  text-align: center;
+}
+
+.award-item img{
+  width: 180px;
+}
+
+@media (max-width:1200px) {
+  .award-container {
+    flex-wrap: wrap;
+}
+  .award-item {
+    flex-basis: 20%; 
+    margin: 1%; 
+    text-align: center;
+}
+.award-item img{
+  width:150px;
+}
+}
+
+.bg-red1 {
+  background-image: linear-gradient( to top , #581212 0% , #AF2323);
+}
+.bg-red {
+  background-color: #AF2323;
+}
+
+.programs-title span {
+  font-size: 20px;
+
+}
+.programs-title span {
+  font-size: 14px !important;   
+}
+
+.programs-title span {
+  font-size: 12px !important;
+}
+
+.recruiter-container{
+  display: flex; 
+  flex-direction: row;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 16px; 
+  padding: 30px 0px;
+}
+
+.recruiter-item{
+  width: 180px;
+}
+
+.recruiter-item img{
+  width:180px;
+}
+.whycontain{
+  width:100%px;
+}
+.whycontain img{
+  width: 100%;
+}
+.slider{
+  justify-content: center;
+  margin:0 10px; 
+}
+
+.reason-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* testimonial */
+
+.testimonial{
+  background-color: #F1F1F1;
+  padding: 60px 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #000;
+  position: relative;
+}
+
+.download__placement__btn__desktop{
+  position: absolute;
+  top: -25px;
+  left:50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+.download__placement__btn__desktop button{
+  border-style:none;
+  background-color: #5990A2;
+  padding: 12px 25px;
+  border-radius:25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.testimonials_title{
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 50px
+}
+
+.testimonials_container-wrapper{
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  display: grid;
+  place-items:center;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial_container{
+  display: flex;
+  width: calc(500px*12);
+  animation: scroll 40s linear infinite;
+}
+
+@@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translate(-500px*6);
+  }
+}
+
+.testimonial-item{
+  width: 500px;
+  margin-right: 60px;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 0 0px 30px #95a5a6;
+  position: relative;
+  padding: 60px 20px 20px 20px;
+
+}
+
+.testimonial-item img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.testimonial_name{
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: -10px
+}
+
+.left-side-quote{
+  text-align: left;
+  font-size: 50px;
+  font-weight: 600;
+  color: #f39c12;
+}
+
+.right-side-quote{
+  text-align: right;
+  font-size: 50px;
+  font-weight: 600;
+  color: #f39c12;
+}
